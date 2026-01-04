@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/challenges/Chapter1_Challenge_1_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenges/Chapter1_Challenge_1_2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenges/Chapter1_Challenge_1_3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenges/Chapter1_Challenge_1_4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenges/Chapter2_Challenge_Applet" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenges/Chapter3_Challenge_BrandedWeatherWidget" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenges/Chapter4_Challenge_DiaryManager" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
