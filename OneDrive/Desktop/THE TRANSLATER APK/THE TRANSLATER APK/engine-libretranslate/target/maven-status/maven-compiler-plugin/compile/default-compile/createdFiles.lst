@@ -1,0 +1,3 @@
+module-info.class
+com\translator\engine\libretranslate\LibreTranslateConfig.class
+com\translator\engine\libretranslate\LibreTranslateEngine.class

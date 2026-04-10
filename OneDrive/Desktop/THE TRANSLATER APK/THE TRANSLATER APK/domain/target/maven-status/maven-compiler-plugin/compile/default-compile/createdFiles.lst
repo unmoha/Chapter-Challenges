@@ -1,0 +1,5 @@
+com\translator\domain\TranslationEngine.class
+com\translator\domain\TranslationRequest.class
+com\translator\domain\TranslationResult.class
+module-info.class
+com\translator\domain\Language.class

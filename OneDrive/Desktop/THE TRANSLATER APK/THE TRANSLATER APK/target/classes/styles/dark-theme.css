@@ -1,0 +1,109 @@
+/* Dark Theme */
+.root {
+    -fx-base: #2b2b2b;
+    -fx-background: #1e1e1e;
+}
+
+/* Text colors */
+.text, .label, .button, .combo-box {
+    -fx-text-fill: #e0e0e0;
+}
+
+.title {
+    -fx-text-fill: #ffffff;
+}
+
+/* Translation panels */
+.translation-panel {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #3d3d3d;
+}
+
+/* Text areas */
+.translation-text {
+    -fx-background-color: #252525;
+    -fx-border-color: #3d3d3d;
+    -fx-text-fill: #e0e0e0;
+}
+
+.translation-text:focused {
+    -fx-border-color: #4a90e2;
+    -fx-effect: dropshadow(gaussian, rgba(74, 144, 226, 0.4), 10, 0.2, 0, 2);
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: #4d4d4d;
+    -fx-text-fill: #e0e0e0;
+}
+
+.button:hover {
+    -fx-background-color: #4d4d4d;
+}
+
+.button:pressed {
+    -fx-background-color: #3d3d3d;
+}
+
+/* Combo boxes */
+.combo-box {
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: #4d4d4d;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #3d3d3d;
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Status bar */
+.status-bar {
+    -fx-background-color: #252525;
+    -fx-border-color: #3d3d3d;
+}
+
+.status-text {
+    -fx-text-fill: #a0a0a0;
+}
+
+/* Progress bar */
+.progress-bar > .track {
+    -fx-background-color: #3d3d3d;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #4a90e2;
+}
+
+/* Scroll bars */
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #4d4d4d;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #5d5d5d;
+}
+
+/* Context menu */
+.context-menu {
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: #4d4d4d;
+}
+
+.menu-item {
+    -fx-background-color: #3d3d3d;
+}
+
+.menu-item:focused {
+    -fx-background-color: #4d4d4d;
+}
+
+/* Text selection */
+.text-input {
+    -fx-highlight-fill: #4a90e2;
+    -fx-highlight-text-fill: #ffffff;
+    -fx-text-fill: #e0e0e0;
+}

@@ -1,0 +1,262 @@
+/* Premium Translator Desktop theme */
+
+.app-root {
+    -color-bg: #F7F8FB;
+    -color-surface: #FFFFFF;
+    -color-surface-2: #FDFEFF;
+    -color-border: rgba(18, 24, 40, 0.10);
+    -color-border-strong: rgba(18, 24, 40, 0.16);
+    -color-text: #0F172A;
+    -color-text-muted: rgba(15, 23, 42, 0.68);
+    -color-text-subtle: rgba(15, 23, 42, 0.48);
+
+    -color-primary: #2D3A8C;
+    -color-primary-hover: #24306F;
+    -color-primary-pressed: #1B2453;
+
+    -color-accent: #F59E0B;
+    -color-accent-hover: #E58E05;
+    -color-accent-pressed: #C97902;
+
+    -color-interactive-hover: rgba(45,58,140,0.10);
+    -color-interactive-pressed: rgba(45,58,140,0.16);
+    -color-focus-ring: rgba(45,58,140,0.26);
+
+    -shadow-elev-1: dropshadow(gaussian, rgba(16,24,40,0.08), 18, 0.22, 0, 6);
+    -shadow-elev-2: dropshadow(gaussian, rgba(16,24,40,0.12), 26, 0.22, 0, 10);
+
+    -radius-card: 12px;
+    -radius-control: 10px;
+
+    -fx-font-family: "Inter", "Segoe UI", "SF Pro Display", "System";
+    -fx-font-size: 13px;
+    -fx-background-color: -color-bg;
+}
+
+
+.card {
+    -fx-background-color: -color-surface;
+    -fx-background-radius: -radius-card;
+    -fx-border-color: transparent;
+    -fx-effect: -shadow-elev-1;
+}
+
+
+.toolbar-card {
+    -fx-padding: 10px 12px 10px 12px;
+}
+
+.toolbar-label {
+    -fx-text-fill: -color-text-muted;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 0 2px 0 2px;
+}
+
+.panel-card {
+    -fx-padding: 12px;
+}
+
+.panel-header {
+    -fx-padding: 0 0 10px 0;
+}
+
+.panel-title {
+    -fx-text-fill: -color-text;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+
+.text-area {
+    -fx-background-radius: -radius-control;
+    -fx-border-radius: -radius-control;
+    -fx-border-color: -color-border;
+    -fx-background-color: -color-surface-2;
+    -fx-focus-color: -color-primary;
+    -fx-faint-focus-color: -color-focus-ring;
+    -fx-highlight-fill: rgba(45,58,140,0.10);
+    -fx-text-fill: -color-text;
+}
+
+.text-area .content {
+    -fx-background-color: -color-surface-2;
+    -fx-background-radius: -radius-control;
+}
+
+.text-area:focused {
+    -fx-border-color: -color-border-strong;
+    -fx-effect: dropshadow(gaussian, -color-focus-ring, 14, 0.22, 0, 0);
+}
+
+.theme-dark .text-area {
+    -fx-highlight-fill: rgba(122,162,255,0.18);
+}
+
+.combo-box {
+    -fx-background-radius: -radius-control;
+    -fx-border-radius: -radius-control;
+    -fx-border-color: -color-border;
+    -fx-background-color: -color-surface-2;
+    -fx-focus-color: -color-primary;
+    -fx-faint-focus-color: -color-focus-ring;
+}
+
+.combo-box:focused {
+    -fx-border-color: -color-border-strong;
+    -fx-effect: dropshadow(gaussian, -color-focus-ring, 14, 0.22, 0, 0);
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: -color-text;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: -color-surface;
+    -fx-background-radius: -radius-control;
+    -fx-effect: -shadow-elev-2;
+    -fx-padding: 6;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 10px 8px 10px;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: -color-interactive-hover;
+}
+
+.button {
+    -fx-background-radius: -radius-control;
+    -fx-border-radius: -radius-control;
+    -fx-cursor: hand;
+}
+
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+}
+
+.icon-button:focused {
+    -fx-background-color: -color-interactive-hover;
+    -fx-effect: dropshadow(gaussian, -color-focus-ring, 12, 0.22, 0, 0);
+}
+
+.icon-button:hover {
+    -fx-background-color: -color-interactive-hover;
+}
+
+.icon-button:pressed {
+    -fx-background-color: -color-interactive-pressed;
+}
+
+.secondary-button {
+    -fx-background-color: -color-surface;
+    -fx-border-color: -color-border;
+    -fx-text-fill: -color-text-muted;
+    -fx-font-weight: 700;
+    -fx-padding: 8px 14px 8px 14px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: rgba(16,24,40,0.04);
+    -fx-border-color: -color-border-strong;
+}
+
+.primary-button {
+    -fx-background-color: -color-accent;
+    -fx-text-fill: #111827;
+    -fx-font-weight: 800;
+    -fx-padding: 10px 18px 10px 18px;
+    -fx-effect: dropshadow(gaussian, rgba(245,158,11,0.28), 16, 0.26, 0, 6);
+}
+
+.primary-button:hover {
+    -fx-background-color: -color-accent-hover;
+    -fx-effect: dropshadow(gaussian, rgba(245,158,11,0.34), 18, 0.28, 0, 7);
+}
+
+.primary-button:pressed {
+    -fx-background-color: -color-accent-pressed;
+    -fx-effect: dropshadow(gaussian, rgba(245,158,11,0.22), 14, 0.26, 0, 4);
+}
+
+.theme-dark .primary-button {
+    -fx-text-fill: #0B1020;
+}
+
+.action-bar {
+    -fx-padding: 12px 0 0 0;
+}
+
+.action-bar {
+    -fx-border-color: transparent;
+}
+
+.status-label {
+    -fx-text-fill: -color-text-muted;
+}
+
+.button:disabled,
+.icon-button:disabled,
+.primary-button:disabled,
+.secondary-button:disabled {
+    -fx-opacity: 0.55;
+    -fx-cursor: default;
+}
+
+.text-area:disabled {
+    -fx-opacity: 0.70;
+}
+
+.combo-box:disabled {
+    -fx-opacity: 0.70;
+}
+
+.dialog-pane {
+    -fx-background-color: -color-bg;
+}
+
+.dialog-pane .content {
+    -fx-background-color: -color-surface;
+    -fx-background-radius: -radius-card;
+    -fx-effect: -shadow-elev-1;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-radius: -radius-control;
+    -fx-border-radius: -radius-control;
+}
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(15, 23, 42, 0.20);
+    -fx-background-radius: 10px;
+}
+
+.theme-dark .scroll-bar .thumb {
+    -fx-background-color: rgba(231, 236, 244, 0.20);
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(15, 23, 42, 0.28);
+}
+
+.theme-dark .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(231, 236, 244, 0.28);
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 2px;
+}

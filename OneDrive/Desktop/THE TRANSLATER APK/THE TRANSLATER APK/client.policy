@@ -1,0 +1,12 @@
+// Client-side policy file for RMI
+// Allows the client to connect to the RMI server
+
+grant {
+    // Allow all permissions (for development only)
+    // In production, you should restrict these permissions
+    permission java.security.AllPermission;
+    
+    // More restrictive example for production:
+    // permission java.net.SocketPermission "localhost:1099", "connect,resolve";
+    // permission java.util.PropertyPermission "*", "read";
+};

@@ -1,0 +1,154 @@
+/* Base styles */
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-base: #f5f5f5;
+    -fx-background: #ffffff;
+}
+
+/* Main container */
+.main-container {
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+    -fx-background-color: -fx-background;
+}
+
+/* Header */
+.header {
+    -fx-padding: 10px 0;
+    -fx-alignment: center-left;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Translation panels */
+.translation-panel {
+    -fx-spacing: 5px;
+    -fx-padding: 10px;
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.panel-header {
+    -fx-spacing: 5px;
+    -fx-alignment: center-left;
+}
+
+/* Text areas */
+.translation-text {
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-wrap-text: true;
+}
+
+.translation-text:focused {
+    -fx-border-color: #4a90e2;
+    -fx-effect: dropshadow(gaussian, rgba(74, 144, 226, 0.3), 10, 0.2, 0, 2);
+}
+
+/* Buttons */
+.button {
+    -fx-background-radius: 3px;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+    -fx-text-fill: #333;
+}
+
+.button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.button:pressed {
+    -fx-background-color: #d0d0d0;
+}
+
+/* Special buttons */
+.swap-button {
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-font-size: 18px;
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+    -fx-border-color: #3a7bc8;
+}
+
+.swap-button:hover {
+    -fx-background-color: #3a7bc8;
+}
+
+/* Combo boxes */
+.language-combo {
+    -fx-pref-width: 180px;
+    -fx-background-color: white;
+}
+
+/* Status bar */
+.status-bar {
+    -fx-padding: 5px 10px;
+    -fx-spacing: 10px;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.status-text {
+    -fx-text-fill: #666;
+    -fx-font-size: 12px;
+}
+
+/* Progress bar */
+.progress-bar > .track {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 2px;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #4a90e2;
+    -fx-background-radius: 2px;
+}
+
+/* Scroll bars */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #c0c0c0;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #a0a0a0;
+}

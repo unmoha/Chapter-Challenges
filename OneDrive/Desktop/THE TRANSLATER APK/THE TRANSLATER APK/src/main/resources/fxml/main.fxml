@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.translator.ui.controller.MainController"
+      spacing="10" styleClass="main-container"
+      stylesheets="@/styles/main.css">
+    
+    <!-- Header -->
+    <HBox styleClass="header">
+        <Label text="OpenTranslate" styleClass="title" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button styleClass="settings-button" onAction="#showSettings">
+            <graphic>
+                <Text styleClass="settings-icon">⚙</Text>
+            </graphic>
+        </Button>
+        <Button text="☀️" styleClass="theme-toggle" onAction="#toggleTheme"/>
+    </HBox>
+    
+    <!-- Translation Area -->
+    <HBox spacing="20" VBox.vgrow="ALWAYS">
+        <!-- Source Panel -->
+        <VBox styleClass="translation-panel" VBox.vgrow="ALWAYS">
+            <HBox styleClass="panel-header">
+                <ComboBox fx:id="sourceLanguageCombo" promptText="Detect Language" styleClass="language-combo" />
+                <Button text="⌫" styleClass="clear-button" onAction="#clearSourceText" />
+                <Button text="🎤" styleClass="mic-button" onAction="#startVoiceInput" />
+                <Button text="📷" styleClass="camera-button" onAction="#captureImage" />
+            </HBox>
+            <TextArea fx:id="sourceTextArea" promptText="Enter text to translate..." 
+                     styleClass="translation-text" wrapText="true" />
+        </VBox>
+        
+        <!-- Swap Button -->
+        <VBox alignment="CENTER">
+            <Button styleClass="swap-button" onAction="#swapLanguages" text="⇄" />
+        </VBox>
+        
+        <!-- Target Panel -->
+        <VBox styleClass="translation-panel" VBox.vgrow="ALWAYS">
+            <HBox styleClass="panel-header">
+                <ComboBox fx:id="targetLanguageCombo" promptText="Select Language" styleClass="language-combo" />
+                <Button text="🔊" styleClass="speak-button" onAction="#speakTranslation" />
+                <Button text="📋" styleClass="copy-button" onAction="#copyToClipboard" />
+            </HBox>
+            <TextArea fx:id="targetTextArea" editable="false" 
+                     styleClass="translation-text" wrapText="true" />
+        </VBox>
+    </HBox>
+    
+    <!-- Status Bar -->
+    <HBox styleClass="status-bar">
+        <Label fx:id="statusLabel" text="Ready" styleClass="status-text" />
+        <ProgressBar fx:id="progressBar" visible="false" HBox.hgrow="ALWAYS" />
+    </HBox>
+    
+</VBox>

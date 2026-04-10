@@ -1,0 +1,3 @@
+com\translator\application\TranslationService.class
+module-info.class
+com\translator\application\EngineRegistry.class

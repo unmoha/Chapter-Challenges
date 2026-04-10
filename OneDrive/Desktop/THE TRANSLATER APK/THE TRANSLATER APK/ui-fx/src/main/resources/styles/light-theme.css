@@ -1,0 +1,64 @@
+/* Light Theme Variables */
+.root {
+    -color-primary: #007bff;
+    -color-primary-dark: #0056b3;
+    -color-on-primary: #ffffff;
+    -color-surface: #ffffff;
+    -color-surface-variant: #f8f9fa;
+    -color-on-surface: #212529;
+    -color-on-surface-variant: #6c757d;
+    -color-outline: #dee2e6;
+    -color-outline-variant: #e9ecef;
+    -color-background: #f8f9fa;
+    -color-on-background: #212529;
+    -color-error: #dc3545;
+    -color-on-error: #ffffff;
+    -fx-background-color: -color-background;
+}
+
+/* Light Theme Overrides */
+.card {
+    -fx-background-color: -color-surface;
+    -fx-border-color: -color-outline;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+.translate-button {
+    -fx-background-color: -color-primary;
+}
+
+.translate-button:hover {
+    -fx-background-color: -color-primary-dark;
+}
+
+.icon-button:hover {
+    -fx-background-color: rgba(0,123,255,0.1);
+}
+
+.text-area {
+    -fx-background-color: -color-surface;
+    -fx-border-color: -color-outline;
+    -fx-text-fill: -color-on-surface;
+}
+
+.text-area:focused {
+    -fx-border-color: -color-primary;
+}
+
+.combo-box {
+    -fx-background-color: -color-surface;
+    -fx-border-color: -color-outline;
+}
+
+.combo-box:focused {
+    -fx-border-color: -color-primary;
+}
+
+.label {
+    -fx-text-fill: -color-on-surface;
+}
+
+.title {
+    -fx-text-fill: -color-on-surface;
+}

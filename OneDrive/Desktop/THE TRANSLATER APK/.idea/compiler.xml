@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="translator-app" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.6">
+      <module name="application" target="17" />
+      <module name="domain" target="17" />
+      <module name="engine-libretranslate" target="17" />
+      <module name="engine-rmi" target="17" />
+      <module name="rmi-server" target="17" />
+      <module name="translator-desktop" target="17" />
+      <module name="translator-desktop.application.main" target="17" />
+      <module name="translator-desktop.application.test" target="17" />
+      <module name="translator-desktop.domain.main" target="17" />
+      <module name="translator-desktop.domain.test" target="17" />
+      <module name="translator-desktop.engine-libretranslate.main" target="17" />
+      <module name="translator-desktop.engine-libretranslate.test" target="17" />
+      <module name="translator-desktop.main" target="17" />
+      <module name="translator-desktop.test" target="17" />
+      <module name="translator-desktop.ui-fx.main" target="17" />
+      <module name="translator-desktop.ui-fx.test" target="17" />
+      <module name="ui-fx" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="translator-app" options="" />
+    </option>
+  </component>
+</project>

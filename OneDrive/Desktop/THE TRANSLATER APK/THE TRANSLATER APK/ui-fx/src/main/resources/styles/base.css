@@ -1,0 +1,195 @@
+/* Base styles for Translator App */
+
+.root {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-focus-color: #007bff;
+    -fx-faint-focus-color: rgba(0,123,255,0.3);
+}
+
+/* Card-based panels */
+.card {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 16px;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.primary-text {
+    -fx-font-size: 18px;
+}
+
+.secondary-text {
+    -fx-font-size: 16px;
+}
+
+.body-small {
+    -fx-font-size: 14px;
+}
+
+/* Button Styles */
+.translate-button {
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+    -fx-cursor: hand;
+    -fx-padding: 12px 24px;
+}
+
+.translate-button:hover {
+    -fx-opacity: 0.9;
+}
+
+.translate-button:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);
+}
+
+/* Icon buttons */
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 8px;
+    -fx-background-radius: 4px;
+}
+
+.icon-button:hover {
+    -fx-background-color: rgba(0,123,255,0.1);
+}
+
+/* Text areas */
+.text-area {
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-padding: 8px;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+
+/* Combo boxes */
+.combo-box {
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+
+/* Labels */
+.label {
+    -fx-wrap-text: true;
+}
+
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-padding: 8px;
+    -fx-cursor: hand;
+    -fx-text-fill: -color-text-secondary;
+}
+
+.icon-button:hover {
+    -fx-background-color: -color-hover;
+}
+
+/* Text Areas */
+.text-area {
+    -fx-background-color: transparent;
+    -fx-text-fill: -color-text-primary;
+    -fx-padding: 0;
+    -fx-font-size: 16px;
+    -fx-font-family: -fx-font-family;
+    -fx-highlight-fill: -color-primary-light;
+    -fx-highlight-text-fill: white;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+    -fx-padding: 12px 0;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: as-needed;
+}
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+/* Combo Box */
+.combo-box {
+    -fx-background-color: -color-surface;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 8px;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 8px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: -color-text-primary;
+    -fx-padding: 8px 12px;
+    -fx-background: -color-surface;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .list-view {
+    -fx-background-color: -color-surface;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: -color-border;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: -color-primary-light;
+    -fx-text-fill: white;
+}
+
+/* Scrollbar Styling */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: -color-scrollbar;
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 0;
+    -fx-shape: " ";
+}
+
+/* Focus Styling */
+*:focused {
+    -fx-focus-color: -color-primary;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Utility Classes */
+.spacing-8 { -fx-spacing: 8px; }
+.spacing-12 { -fx-spacing: 12px; }
+.spacing-16 { -fx-spacing: 16px; }
+.spacing-24 { -fx-spacing: 24px; }
+
+.padding-8 { -fx-padding: 8px; }
+.padding-12 { -fx-padding: 12px; }
+.padding-16 { -fx-padding: 16px; }
+.padding-24 { -fx-padding: 24px; }

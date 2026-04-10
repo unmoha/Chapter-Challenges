@@ -1,0 +1,14 @@
+// Server-side policy file for RMI
+// Grants the necessary permissions for the RMI server to function
+
+grant {
+    // Allow all permissions (for development only)
+    // In production, you should restrict these permissions
+    permission java.security.AllPermission;
+    
+    // More restrictive example for production:
+    // permission java.net.SocketPermission "localhost:1099", "listen,accept,connect,resolve";
+    // permission java.util.PropertyPermission "*", "read,write";
+    // permission java.lang.RuntimePermission "setFactory";
+    // permission java.io.FilePermission "<<ALL FILES>>", "read,write,delete";
+};
